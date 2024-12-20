@@ -1,0 +1,13 @@
+{
+    "name": "lm-radar",
+    "version": "0.0.1",
+    "license": "",
+    "scripts": {
+        "build": "techradar build",
+        "serve": "techradar serve",
+        "dev": "techradar dev"
+    },
+    "dependencies": {
+        "aoe_technology_radar": "^4"
+    }
+}
