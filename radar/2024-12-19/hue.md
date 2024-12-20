@@ -1,6 +1,6 @@
 ---
-title: ""
+title: "Hue"
 ring: adopt
 quadrant: platforms-and-hardwares
-tags: []
+tags: [smart-home]
 ---
