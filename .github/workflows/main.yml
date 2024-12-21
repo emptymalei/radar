@@ -1,0 +1,41 @@
+name: Build Radar
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+    inputs:
+      directory:
+        description: 'Build docs'
+        default: 'build it now'
+        required: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "lts/*"
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ~/.npm
+            .techradar
+          key: ${{ runner.os }}-techradar-${{ hashFiles('**/package-lock.json') }}
+      - run: npm ci
+      - run: npm run build
+      - run: if [ -n "$(git status --porcelain)" ]; then echo 'workspace is dirty after rebuilding' ; git status ; git diff ; exit 1 ; fi
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: build
+          path: build
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4.6.1
+        with:
+          folder: build
+          clean-exclude: pr-preview/
+          force: false

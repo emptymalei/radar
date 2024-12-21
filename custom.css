@@ -1,0 +1,12 @@
+/* Use this file to optionally override global css styles and use with caution. */
+/* See README.md for hints and examples: https://github.com/AOEpeople/aoe_technology_radar/ */
+[class^="Logo_src"] {
+    width: 30px;
+    transition: width 200ms ease-in-out;
+}
+
+[class^="Footer_logo"] {
+    display: block;
+    margin: 0 auto 20px;
+    width: 20px;
+}
