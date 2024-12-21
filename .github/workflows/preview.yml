@@ -1,0 +1,43 @@
+name: Deploy PR Previews
+
+on:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - closed
+
+concurrency: preview-${{ github.ref }}
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "lts/*"
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ~/.npm
+            .techradar
+          key: ${{ runner.os }}-techradar-${{ hashFiles('**/package-lock.json') }}
+      - run: npm ci
+      - run: npm run build
+      - run: if [ -n "$(git status --porcelain)" ]; then echo 'workspace is dirty after rebuilding' ; git status ; git diff ; exit 1 ; fi
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: build
+          path: build
+      - name: add CNAME
+        run: echo "radar.leima.is" > build/CNAME
+      - name: Deploy preview
+        uses: rossjrw/pr-preview-action@v1.4.7
+        with:
+          source-dir: ./build/
