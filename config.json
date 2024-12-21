@@ -13,8 +13,8 @@
   "sections": ["radar", "tags", "list"],
   "colors": {
     "foreground": "#fff",
-    "background": "#173d7a",
-    "highlight": "#029df7",
+    "background": "#000",
+    "highlight": "#EC0B88",
     "content": "#fff",
     "text": "#575757",
     "link": "#029df7",
@@ -26,25 +26,25 @@
       "id": "languages-and-frameworks",
       "title": "Languages & Frameworks",
       "description": "A selection of programming languages, alongside essential frameworks for my personal projects.",
-      "color": "#a3b18a"
+      "color": "#77AADD"
     },
     {
       "id": "methods-and-philosophies",
       "title": "Methods & Philosophies",
-      "description": "Key software development methods and design patterns, covering everything from continuous integration and testing to architecture.",
-      "color": "#588157"
+      "description": "Key methods and personal beliefs.",
+      "color": "#44BB99"
     },
     {
       "id": "platforms-and-hardwares",
       "title": "Platforms & Hardwares",
-      "description": "Technologies and tools for software and infrastructure operations, including platforms and services for managing and scaling applications.",
-      "color": "#3f633e"
+      "description": "Some core platforms and hardware components that I use in my projects.",
+      "color": "#EEDD88"
     },
     {
       "id": "tools",
       "title": "Tools",
       "description": "A range of software tools, from simple productivity enhancers to comprehensive project solutions, catering to various project needs.",
-      "color": "#40713f"
+      "color": "#FFAABB"
     }
   ],
   "rings": [
@@ -104,35 +104,27 @@
   },
   "social": [
     {
-      "href": "https://twitter.com/aoepeople",
-      "icon": "x"
-    },
-    {
-      "href": "https://www.linkedin.com/company/aoe",
+      "href": "https://www.linkedin.com/in/leima137/",
       "icon": "linkedIn"
     },
     {
-      "href": "https://www.xing.com/company/aoe",
-      "icon": "xing"
-    },
-    {
-      "href": "https://github.com/aoepeople",
+      "href": "https://github.com/emptymalei",
       "icon": "github"
     }
   ],
-  "imprint": "https://www.aoe.com/en/imprint.html",
+  "imprint": "https://leima.is",
   "labels": {
-    "title": "Technology Radar",
-    "imprint": "Legal Information",
-    "quadrant": "Quadrant",
-    "quadrantOverview": "Quadrant Overview",
+    "title": "LM's Personal Tech Radar",
+    "imprint": "",
+    "quadrant": "Section",
+    "quadrantOverview": "Section Overview",
     "zoomIn": "Zoom in",
     "filterByTag": "Filter by Tag",
-    "footer": "The technology radar is a project by AOE GmbH. Feel free to build your own radar based on the open source project.",
+    "footer": "Built by LM using the techradar tool AOEpeople/aoe_technology_radar.",
     "notUpdated": "This item was not updated in last three versions of the Radar. Should it have appeared in one of the more recent editions, there is a good chance it remains pertinent. However, if the item dates back further, its relevance may have diminished and our current evaluation could vary. Regrettably, our capacity to consistently revisit items from past Radar editions is limited.",
     "notFound": "404 - Page not found",
-    "pageAbout": "How to use AOE Technology Radar?",
-    "pageOverview": "Technologies Overview",
+    "pageAbout": "About",
+    "pageOverview": "Tech Overview",
     "pageSearch": "Search",
     "searchPlaceholder": "What are you looking for?",
     "metaDescription": ""

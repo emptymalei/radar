@@ -1,11 +1,8 @@
-# How to use the Technology Radar
+# About
 
-### Introduction
+I use this to keep track of and manage my personal tech stack from a high-level perspective.
 
-Edit this file to your needs to provide an introduction to the technology radar. Explain the purpose
-of the radar and how it is created. This is a good place to explain the quadrants and rings, too.
+More about me: [https://leima.is/](https://leima.is/)
 
-### Contributing to the AOE Technology Radar
-
-Contributions and source code of the AOE Tech Radar are on
-GitHub: [AOE Tech Radar on GitHub](https://github.com/AOEpeople/aoe_technology_radar)
+Acknowledgement:
+- [AOEpeople/aoe_technology_radar](https://github.com/AOEpeople/aoe_technology_radar)
