@@ -36,8 +36,8 @@ jobs:
         with:
           name: build
           path: build
-      - name: add CNAME
-        run: echo "radar.leima.is" > build/CNAME
+    #   - name: add CNAME
+    #     run: echo "radar.leima.is" > build/CNAME
       - name: nojekyll
         run: touch build/.nojekyll
       - name: Deploy 🚀
