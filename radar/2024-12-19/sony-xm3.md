@@ -5,5 +5,4 @@ quadrant: platforms-and-hardwares
 tags: [hardware, headphones]
 ---
 
-The bridge broke.
-
+The bridge snapped, as usual.

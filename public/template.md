@@ -1,6 +1,6 @@
 ---
 title: ""
 ring: adopt
-quadrant: platforms-and-hardwares
+quadrant: tools
 tags: []
 ---
