@@ -2,5 +2,5 @@
 title: "Astro"
 ring: trial
 quadrant: languages-and-frameworks
-tags: [static-site-generator]
+tags: [static-site-generator, markdown]
 ---

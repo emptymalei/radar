@@ -2,7 +2,7 @@
 title: "Hugo"
 ring: adopt
 quadrant: languages-and-frameworks
-tags: [static-site-generator]
+tags: [static-site-generator, markdown]
 ---
 
 I have built many static websites using Hugo. The main benefits that I am enjoying are:
