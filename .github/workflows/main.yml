@@ -38,8 +38,8 @@ jobs:
           path: build
     #   - name: add CNAME
     #     run: echo "radar.leima.is" > build/CNAME
-      - name: nojekyll
-        run: touch build/.nojekyll
+    #   - name: nojekyll
+    #     run: touch build/.nojekyll
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.7.2
         with:
