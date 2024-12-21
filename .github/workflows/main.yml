@@ -33,6 +33,12 @@ jobs:
         with:
           name: build
           path: build
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4.6.1
+        with:
+          folder: build
+          clean-exclude: pr-preview/
+          force: false
 
   deploy:
     needs: build
@@ -50,9 +56,4 @@ jobs:
         with:
           name: build
           path: build
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4.6.1
-        with:
-          folder: build
-          clean-exclude: pr-preview/
-          force: false
+      
