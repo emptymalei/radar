@@ -35,8 +35,8 @@ jobs:
         with:
           name: build
           path: build
-      - name: add CNAME
-        run: echo "radar.leima.is" > build/CNAME
+    #   - name: add CNAME
+    #     run: echo "radar.leima.is" > build/CNAME
       - name: Deploy preview
         uses: rossjrw/pr-preview-action@v1.4.7
         with:
