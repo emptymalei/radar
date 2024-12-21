@@ -6,10 +6,10 @@ on:
       - main
   workflow_dispatch:
     inputs:
-      whotriggered:
-      description: 'Manual Trigger'
-      default: 'Trigger manually'
-      required: false
+      directory:
+        description: 'Build docs'
+        default: 'build it now'
+        required: false
 
 jobs:
   build:
