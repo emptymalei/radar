@@ -2,5 +2,5 @@
 title: "OpenWebUI"
 ring: adopt
 quadrant: tools
-tags: [ai, productivity]
+tags: [ai, productivity, self-hosted]
 ---

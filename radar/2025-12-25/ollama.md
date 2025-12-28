@@ -2,7 +2,7 @@
 title: "Ollama"
 ring: adopt
 quadrant: languages-and-frameworks
-tags: [ai]
+tags: [ai, self-hosted]
 ---
 
 Ollama has become one of the core components of my AI stack.

@@ -1,6 +1,6 @@
 ---
 title: "Readwise"
-ring: adopt
+ring: hold
 quadrant: tools
 tags: [knowledge-management]
 ---
